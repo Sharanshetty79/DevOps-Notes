@@ -1,0 +1,6 @@
+<distributionManagement>
+    <repository>
+        <id>local-repo</id>
+        <url>file:///path/to/local/directory</url>
+    </repository>
+</distributionManagement>

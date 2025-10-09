@@ -1,0 +1,31 @@
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.4.2</version>
+            <configuration>
+                <archive>
+                    <manifestEntries>
+                        <Main-Class>com.amazon.App</Main-Class> <!-- Replace with your actual main class -->
+                    </manifestEntries>
+                </archive>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+
+    --> Add below plugin in plugins section to run jar file
+
+    <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.4.2</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+              <mainClass>com.amazon.App</mainClass> <!-- Replace with your main class -->
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
